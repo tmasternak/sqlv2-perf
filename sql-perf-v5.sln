@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "sql-perf-v5\Sender.csproj", "{F2C27C42-D97E-43F1-B635-E92127B37640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{8A4FA835-4953-4A45-91D3-291D0CC2B9C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver", "Receiver\Receiver\Receiver.csproj", "{C82266FC-01E0-4238-8258-2C07A33394A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2C27C42-D97E-43F1-B635-E92127B37640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C27C42-D97E-43F1-B635-E92127B37640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C27C42-D97E-43F1-B635-E92127B37640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C27C42-D97E-43F1-B635-E92127B37640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A4FA835-4953-4A45-91D3-291D0CC2B9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4FA835-4953-4A45-91D3-291D0CC2B9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4FA835-4953-4A45-91D3-291D0CC2B9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4FA835-4953-4A45-91D3-291D0CC2B9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C82266FC-01E0-4238-8258-2C07A33394A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82266FC-01E0-4238-8258-2C07A33394A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82266FC-01E0-4238-8258-2C07A33394A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82266FC-01E0-4238-8258-2C07A33394A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
