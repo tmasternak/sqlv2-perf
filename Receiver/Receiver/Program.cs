@@ -5,15 +5,19 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Messages;
+using Metrics;
 using NServiceBus;
 using NServiceBus.Features;
 
 namespace Receiver
 {
+
     class Program
     {
+        public static Meter metric = Metric.Meter("Receiver message handler", Unit.Items);
         static void Main(string[] args)
         {
+            Messages.Metrics.Init();
             var cfg = new BusConfiguration();
 
             cfg.UsePersistence<InMemoryPersistence>();

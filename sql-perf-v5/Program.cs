@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using Messages;
+using Metrics;
 using NServiceBus;
 using NServiceBus.Features;
 
@@ -8,8 +9,10 @@ namespace Sender
 {
     class Program
     {
+        static readonly Meter writerMetric = Metric.Meter("Writer", Unit.Items);
         static void Main(string[] args)
         {
+            Messages.Metrics.Init();
             var cfg = new BusConfiguration();
 
             cfg.UsePersistence<InMemoryPersistence>();
@@ -41,7 +44,7 @@ namespace Sender
                     while (true)
                     {
                         bus.Send(new SampleMessage());
-
+                        writerMetric.Mark();
                         stats.MessageProcessed();
                     }
                 }).Start();

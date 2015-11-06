@@ -15,6 +15,7 @@ namespace Receiver
 
         public void Handle(SampleMessage message)
         {
+            Program.metric.Mark();
             _stats.MessageProcessed();
         }
     }
